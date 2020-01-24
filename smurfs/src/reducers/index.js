@@ -8,7 +8,7 @@ import {
 } from '../actions';
 
 export const initialState = {
-    smurfs: [{"name":"Brainey","age":200,"height":"5cm","id":0}],
+    smurfs: [{"name":"Brainey","age":200,"height":"5","id":0}],
     isFetching: false,
     error: ''
 }

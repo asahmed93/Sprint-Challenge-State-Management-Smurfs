@@ -4,7 +4,7 @@ const SmurfCard = props => {
     return (
         <div key={props.id}>
             <h1>Smurf Name: {props.name}</h1>
-            <p>This smurf is {props.age} years old and {props.height} tall!</p>
+            <p>This smurf is {props.age} years old and {props.height} cm tall!</p>
         </div>
     )
 }
