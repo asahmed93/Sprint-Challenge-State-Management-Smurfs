@@ -12,6 +12,23 @@ export const initialState = {
 
 export const reducer = (state=initialState, action) => {
     switch(action.type){
+        case SMURF_START: 
+            return {
+                ...state,
+                isFetching: true
+            }
+        case SMURF_SUCCESS: 
+            return {
+                ...state,
+                isFetching: false,
+                error: ''
+            }
+        case SMURF_FAILURE:
+            return {
+                ...state,
+                isFetching: false,
+                error: action.payload
+            }
         default: return state
     }
 }
